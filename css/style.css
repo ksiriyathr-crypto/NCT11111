@@ -475,13 +475,6 @@
         margin-bottom: 10px !important;
         word-break: break-word;
     }
-
-    /* ปิดเส้นยาวๆ ก่อน/หลัง h5 บนมือถือ (ตัวการทำให้ซ้อน) */
-    .title .title-left h5::after,
-    .title .title-center h5::before,
-    .title .title-center h5::after,
-    .title .title-right h5::before {
-        content: none !important;
        
     }
 
@@ -1248,7 +1241,7 @@ html[lang="en"] .carousel-caption .title-center h1{
     .title .title-center h5::before,
     .title .title-center h5::after,
     .title .title-right h5::before {
-        content: none !important;
+        
         
     }
 
