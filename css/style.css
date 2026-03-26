@@ -1693,15 +1693,6 @@ html[lang="en"] .carousel-caption .title-center h1{
         -webkit-backdrop-filter: blur(4px);
     }
 
-    /* ปิดเส้นตกแต่ง title บนมือถือ */
-    .title .title-left h5::after,
-    .title .title-center h5::before,
-    .title .title-center h5::after,
-    .title .title-right h5::before {
-        content: none !important;
-        display: none !important;
-    }
-
     .title {
         margin-bottom: 1.2rem !important;
     }
