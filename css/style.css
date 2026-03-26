@@ -1884,6 +1884,37 @@ html[lang="en"] .carousel-caption .title-center h1{
     }
 
 }
+/* ===== MOBILE WELCOME LINES ===== */
+@media (max-width: 768px) {
+    .carousel-caption .title .title-center h5 {
+        position: relative !important;
+        display: inline-block !important;
+        padding: 0 58px !important;
+        margin: 0 auto 10px auto !important;
+        text-align: center !important;
+        line-height: 1.2 !important;
+    }
 
+    .carousel-caption .title .title-center h5::before,
+    .carousel-caption .title .title-center h5::after {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        top: 50% !important;
+        width: 42px !important;
+        height: 1px !important;
+        background: rgba(255,255,255,0.75) !important;
+        border: 0 !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .carousel-caption .title .title-center h5::before {
+        left: 0 !important;
+    }
+
+    .carousel-caption .title .title-center h5::after {
+        right: 0 !important;
+    }
+}
 
 
