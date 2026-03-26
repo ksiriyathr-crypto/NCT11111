@@ -1958,4 +1958,33 @@ html[lang="en"] .carousel-caption .title-center h1{
         width: 40px !important;
     }
 }
+/* ===== FIX: PERFECT CENTER LINE (MOBILE) ===== */
+
+@media (max-width: 768px){
+
+.title .title-center h5{
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* ระยะห่างระหว่างเส้นกับข้อความ */
+    padding: 0 !important;
+}
+
+/* ลบของเดิม */
+.title .title-center h5::before,
+.title .title-center h5::after{
+    content: none !important;
+}
+
+/* สร้างเส้นใหม่แบบเท่ากันจริง */
+.title .title-center h5::before,
+.title .title-center h5::after{
+    content: "";
+    flex: 1;              /* 🔥 ทำให้ยาวเท่ากันอัตโนมัติ */
+    height: 1px;
+    background: rgba(255,255,255,0.6);
+}
+
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
