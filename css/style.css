@@ -1884,4 +1884,33 @@ html[lang="en"] .carousel-caption .title-center h1{
     }
 
 }
+/* ===== FIX: BRING BACK WELCOME LINES ===== */
+
+@media (max-width: 768px){
+
+.title .title-center h5::before,
+.title .title-center h5::after{
+    display:block !important;
+    width:60px !important;   /* ความยาวเส้น */
+    border-bottom:1px solid rgba(255,255,255,0.6);
+    top:50%;
+}
+
+.title .title-center h5{
+    position:relative;
+    display:inline-block;
+    padding:0 15px;
+}
+
+.title .title-center h5::before{
+    right:100%;
+    margin-right:10px;
+}
+
+.title .title-center h5::after{
+    left:100%;
+    margin-left:10px;
+}
+
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
