@@ -1936,3 +1936,32 @@ html[lang="en"] .carousel-caption .title-center h1{
         margin: 0 !important;
     }
 }
+/* ===== FIX LINE BALANCE (ALL DEVICES) ===== */
+
+.title .title-center h5 {
+    position: relative;
+    display: inline-block;
+    padding: 0 80px; /* เว้นพื้นที่ให้เส้น */
+}
+
+/* ลบของเดิม */
+.title .title-center h5::before,
+.title .title-center h5::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;          /* 🔥 คุมความยาวตรงนี้ */
+    height: 1px;
+    background: rgba(255,255,255,0.8);
+    transform: translateY(-50%);
+}
+
+/* ซ้าย */
+.title .title-center h5::before {
+    left: 0;
+}
+
+/* ขวา */
+.title .title-center h5::after {
+    right: 0;
+}
