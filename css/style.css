@@ -1839,4 +1839,49 @@ html[lang="en"] .carousel-caption .title-center h1{
         height: 125px !important;
     }
 }
+/* ===== FINAL MOBILE FIX (PUT THIS AT THE VERY END) ===== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        background: transparent !important;
+        min-height: 72px !important;
+    }
+
+    .navbar .navbar-brand img {
+        height: 50px !important;
+    }
+
+    .carousel-caption {
+        padding-top: 190px !important;
+    }
+
+    .carousel-caption .title {
+        margin-top: 25px !important;
+    }
+
+    .carousel-caption h5 {
+        margin-top: 20px !important;
+        font-size: 22px !important;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption .display-1 {
+        margin-top: 10px !important;
+        font-size: 2.1rem !important;
+        line-height: 1.2 !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .carousel-caption {
+        padding-top: 210px !important;
+    }
+
+    .carousel-caption .title {
+        margin-top: 30px !important;
+    }
+
+}
 /* ===== FINAL MOBILE FIX (DO NOT EDIT BELOW) ===== */
