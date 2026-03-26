@@ -482,7 +482,7 @@
     .title .title-center h5::after,
     .title .title-right h5::before {
         content: none !important;
-        display: none !important;
+       
     }
 
     /* เส้นใต้ h1 ถ้าทำให้ดูแน่นเกินไป ลดให้บางลง (คงไว้ แต่ไม่รบกวน) */
